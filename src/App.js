@@ -19,7 +19,7 @@ function App() {
           </Col>
           <Col className=" col-md-3 py-3 col-12">
             <Card style={{ width: "250px",boxShadow:'3px 2px 5px black' }}>
-              <Card.Img className="img" variant="top" src="/img/jesus.jpg" />
+              <Card.Img className="img" variant="top" src="/img/Jesus.jpg" />
               <Card.Body>
                 <Card.Title style={{color:'red'}}>Chirst the Redeemer</Card.Title>
                 <Card.Text style={{color:'blue'}}>
