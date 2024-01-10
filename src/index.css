@@ -11,3 +11,46 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.App{
+  width:100%;
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap:30px;
+}
+.brand{
+  font-weight: bold;
+  text-transform: uppercase;
+  display:flex;
+  justify-content: space-around;
+  width:150px;
+}
+.col{
+  margin:100px 0;
+}
+.home{
+  font-weight: bold;
+}
+.img{
+  width:250px;
+  height:200px;
+}
+.title{
+  color:yellow;
+}
+.card-color{
+  background-color: rgba(255, 255, 255, 0.918);
+}
+.navbar{
+  background-color:blue;
+  color:black;
+  font-size:18px;
+}
+@media screen and (max-width:800px){
+  .col{
+    padding:0 18%;
+    margin:5px 0;
+  }
+  .top-card{
+    margin-top:80px;
+  }
+}

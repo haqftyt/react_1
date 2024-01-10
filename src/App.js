@@ -1,23 +1,57 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { Button, Container, Row, Col, Card } from "react-bootstrap";
+import Header from "./Header";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <Container fluid className="px-5">
+        <Row>
+          <Col className="col-md-3 py-3 col-12 top-card">
+            <Card style={{ width: "250px",backgroundColor:"lightgreen" ,boxShadow:'3px 2px 5px black'}}>
+              <Card.Img className="img" variant="top" src="/img/tajmahal.jpg"/>
+              <Card.Body>
+                <Card.Title style={{color:'red'}}>Taj Mahal</Card.Title>
+                <Card.Text style={{color:'blue'}}>
+                 UttarPradesh,India
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col className=" col-md-3 py-3 col-12">
+            <Card style={{ width: "250px",boxShadow:'3px 2px 5px black' }}>
+              <Card.Img className="img" variant="top" src="/img/jesus.jpg" />
+              <Card.Body>
+                <Card.Title style={{color:'red'}}>Chirst the Redeemer</Card.Title>
+                <Card.Text style={{color:'blue'}}>
+                 Rio de Janeiro, Brazil
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col className=" col-md-3 py-3 col-12">
+            <Card style={{ width: "250px",boxShadow:'3px 2px 5px black'}}>
+              <Card.Img className="img" variant="top" src="/img/collassuem.jpg" />
+              <Card.Body>
+                <Card.Title style={{color:'red'}}>Collassuem</Card.Title>
+                <Card.Text style={{color:'blue'}}>
+                 Peru
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col className="col-md-3 py-3 col-12">
+            <Card style={{ width: "250px",boxShadow:'3px 2px 5px black' }}>
+              <Card.Img className="img" variant="top" src="/img/machupichu.jpg" />
+              <Card.Body>
+                <Card.Title style={{color:'red'}}>Machu Pichu</Card.Title>
+                <Card.Text style={{color:'blue'}}>
+                 Rome,Italy
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+        </Row>
+      </Container>
     </div>
   );
 }
